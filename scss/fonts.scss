@@ -1,0 +1,7 @@
+@import "bourbon";
+
+@include font-face("BebasNeueCyrillic", "fonts/BebasNeueCyrillic", $file-formats: woff woff2);
+
+@include font-face("FuturaPT-Book", "fonts/FuturaPT-Book", $file-formats: woff woff2);
+@include font-face("FuturaPT-Demi", "fonts/FuturaPT-Demi", $file-formats: woff woff2);
+@include font-face("FuturaPT-Medium", "fonts/FuturaPT-Medium", $file-formats: woff woff2);
