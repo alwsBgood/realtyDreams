@@ -43,7 +43,7 @@ gulp.task('scripts', function() {
 		'./app/libs/niftymodal/classie.js',
     './app/libs/niftymodal/modalEffects.js',
     './app/libs/masked/mask.js',
-		'./app/libs/plugins-scroll/plugins-scroll.js',
+		// './app/libs/plugins-scroll/plugins-scroll.js',
     './app/libs/slick/slick.min.js'
 		])
 		.pipe(concat('libs.js'))

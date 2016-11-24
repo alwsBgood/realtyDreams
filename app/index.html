@@ -40,12 +40,37 @@
     <style>:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-left:-15px;margin-right:-15px}.col-1,.col-sm-1,.col-md-1,.col-lg-1,.col-2,.col-sm-2,.col-md-2,.col-lg-2,.col-3,.col-sm-3,.col-md-3,.col-lg-3,.col-4,.col-sm-4,.col-md-4,.col-lg-4,.col-5,.col-sm-5,.col-md-5,.col-lg-5,.col-6,.col-sm-6,.col-md-6,.col-lg-6,.col-7,.col-sm-7,.col-md-7,.col-lg-7,.col-8,.col-sm-8,.col-md-8,.col-lg-8,.col-9,.col-sm-9,.col-md-9,.col-lg-9,.col-10,.col-sm-10,.col-md-10,.col-lg-10,.col-11,.col-sm-11,.col-md-11,.col-lg-11,.col-12,.col-sm-12,.col-md-12,.col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{float:left}.col-12{width:100%}.col-11{width:91.66666667%}.col-10{width:83.33333333%}.col-9{width:75%}.col-8{width:66.66666667%}.col-7{width:58.33333333%}.col-6{width:50%}.col-5{width:41.66666667%}.col-4{width:33.33333333%}.col-3{width:25%}.col-2{width:16.66666667%}.col-1{width:8.33333333%}.col-pull-12{right:100%}.col-pull-11{right:91.66666667%}.col-pull-10{right:83.33333333%}.col-pull-9{right:75%}.col-pull-8{right:66.66666667%}.col-pull-7{right:58.33333333%}.col-pull-6{right:50%}.col-pull-5{right:41.66666667%}.col-pull-4{right:33.33333333%}.col-pull-3{right:25%}.col-pull-2{right:16.66666667%}.col-pull-1{right:8.33333333%}.col-pull-0{right:auto}.col-push-12{left:100%}.col-push-11{left:91.66666667%}.col-push-10{left:83.33333333%}.col-push-9{left:75%}.col-push-8{left:66.66666667%}.col-push-7{left:58.33333333%}.col-push-6{left:50%}.col-push-5{left:41.66666667%}.col-push-4{left:33.33333333%}.col-push-3{left:25%}.col-push-2{left:16.66666667%}.col-push-1{left:8.33333333%}.col-push-0{left:auto}.col-offset-12{margin-left:100%}.col-offset-11{margin-left:91.66666667%}.col-offset-10{margin-left:83.33333333%}.col-offset-9{margin-left:75%}.col-offset-8{margin-left:66.66666667%}.col-offset-7{margin-left:58.33333333%}.col-offset-6{margin-left:50%}.col-offset-5{margin-left:41.66666667%}.col-offset-4{margin-left:33.33333333%}.col-offset-3{margin-left:25%}.col-offset-2{margin-left:16.66666667%}.col-offset-1{margin-left:8.33333333%}.col-offset-0{margin-left:0}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}</style>
 
 	<!-- FONTS+HEADER -->
-	<style></style>
+<style>
+@font-face {
+font-family: "BebasNeueCyrillic";
+font-style: normal;
+font-weight: normal;
+src: url("fonts/BebasNeueCyrillic.woff2") format("woff2"), url("fonts/BebasNeueCyrillic.woff") format("woff"); }
+
+@font-face {
+font-family: "FuturaPT-Book";
+font-style: normal;
+font-weight: normal;
+src: url("fonts/FuturaPT-Book.woff2") format("woff2"), url("fonts/FuturaPT-Book.woff") format("woff"); }
+
+@font-face {
+font-family: "FuturaPT-Demi";
+font-style: normal;
+font-weight: normal;
+src: url("fonts/FuturaPT-Demi.woff2") format("woff2"), url("fonts/FuturaPT-Demi.woff") format("woff"); }
+
+@font-face {
+font-family: "FuturaPT-Medium";
+font-style: normal;
+font-weight: normal;
+src: url("fonts/FuturaPT-Medium.woff2") format("woff2"), url("fonts/FuturaPT-Medium.woff") format("woff"); }
+
+</style>
 
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
-<!-- 	<link rel="stylesheet" href="css/fonts.css"> -->
+	<!-- <link rel="stylesheet" href="css/fonts.css"> -->
 	<link rel="stylesheet" href="css/header.css">
 	<!-- Load CSS Start -->
 	<!-- <script>loadCSS( "css/fonts.css?ver=1.0.0", false, "all" );</script> -->
@@ -67,13 +92,16 @@
         <div class="row top">
             <div class="col-12">
                 <img src="img/logo.png" alt="Logo" class="logo">
-                <a data-modal="modal_callback" class="md-trigger" >Заказать звонок</a>
+                <a data-modal="modal_callback" class="flex btn phones md-trigger" >Заказать звонок</a>
+                <div class="clear"></div>
             </div>
-            <div class="row col-12">
+        </div>
+        <div class="row">
+            <div class="col-12">
                 <h1>Осуществите  вашу <br> мечту  за 21 день</h1>
                 <p class="afterheader">комплекс услуг по продаже  недвижимости у моря</p>
                 <p class="text">Оставьте заявку прямо сейчас и получите <span class="yellow">ТОП-10 самых <br> выгодных предложений</span> на почту в течение 10 минут</p>
-                <a data-modal="modal_callback" class="btn flex md-trigger">Хочу дом у моря</a>
+                <a data-modal="modal_callback_top" class="btn flex md-trigger">Хочу дом у моря</a>
             </div>
         </div>
     </div>
@@ -83,20 +111,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="text">Просыпаться под крики чаек…  <br>Наслаждаться шумом волн в любое время дня и ночи…  <br> Ужинать, созерцая, как солнце катится за морской горизонт…</p>
-                <h2>Вы давно об этом мечтаете?</h2>
-                <img src="img/h2_underline.png" alt="Underline" class="undr">
-                <h3>Хватит думать, пришло <br> время исполнять свои <br>желания!</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="sec_03">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2>Почему вам пора купить собственный дом мечты у моря?</h2>
+                <h2>Почему вам пора купить <br /> собственный дом мечты у моря?</h2>
                 <img src="img/h2_underline.png" alt="Underline" class="undr">
             </div>
             <div class="col-6">
@@ -128,44 +143,74 @@
     </div>
 </section>
 
-<section id="sec_04">
+
+<section id="sec_03">
+<div id="video-bg">
+<video preload="auto" autoplay="autoplay" loop="loop" poster="img/poster.png">
+    <source src="img/video_bg.mp4" type="video/mp4">
+
+</video>
+</div>
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>ГИД-Агентство <span class="yellow">RealtyDreams</span> — это…</h2>
+                <p class="text">Просыпаться под крики чаек…  <br>Наслаждаться шумом волн в любое время дня и ночи…  <br> Ужинать, созерцая, как солнце катится за морской горизонт…</p>
+                <p class="title">Вы давно об этом мечтаете?</p>
                 <img src="img/h2_underline.png" alt="Underline" class="undr">
-                <div class="item">
-                    <span class="number">01</span>
-                    <p class="title">Поселиться в уютном <br> бунгало на берегу моря</p>
-                    <p class="text">...тысяча и один способ исполнить свою мечту «под ключ» и поселиться в уютном бунгало <br> на берегу моря. Мы поможем приобрести комфортную недвижимость по вашим запросам <br> в самом сердце курортного города или отправиться познавать мир.</p>
-                </div>
-                <div class="item">
-                    <span class="number">02</span>
-                    <p class="title">От подбора лучшего варианта до <br> оформления права собственности</p>
-                    <p class="text">Вы получаете полный комплекс услуг по осуществлению ваших желаний: <br> от подбора лучшего варианта до оформления права собственности на <br> ваш домик у моря, от выбора тура - до оказания любой помощи <br> в организации путешествия.</p>
-                </div>
-                <div class="item">
-                    <span class="number">03</span>
-                    <p class="title">Приезжайте провести отпуск <br> в свой особняк на берегу моря</p>
-                    <p class="text">Доверьте заботы по покупке дома вашей мечты ГИД-Агентству RealtyDreams и через 21 <br> день наслаждайтесь райским бунгало под шум морской волны или приезжайте провести <br> отпуск в свой особняк на берегу моря, путешествуя по местным достопримечательностям!</p>
-                </div>
+                <h3>Хватит думать, пришло <br> время исполнять свои <br>желания!</h3>
             </div>
         </div>
     </div>
 </section>
 
+
+<div class="sec_04-wrap">
+<div class="video">
+    <video preload="auto" autoplay="autoplay" loop="loop">
+        <source src="img/video_cloud.mp4" type="video/mp4">
+        <source src="img/video_cloud.webm" type="video/webm">
+    </video>
+</div>
+    <section id="sec_04">
+    <div class="paralax"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>ГИД-Агентство <span class="yellow">RealtyDreams</span> — это…</h2>
+                    <img src="img/h2_underline.png" alt="Underline" class="undr">
+                    <div class="item">
+                        <span class="number">01</span>
+                        <p class="title">Поселиться в уютном <br> бунгало на берегу моря</p>
+                        <p class="text">...тысяча и один способ исполнить свою мечту «под ключ» и поселиться в уютном бунгало <br> на берегу моря. Мы поможем приобрести комфортную недвижимость по вашим запросам <br> в самом сердце курортного города или отправиться познавать мир.</p>
+                    </div>
+                    <div class="item">
+                        <span class="number">02</span>
+                        <p class="title">От подбора лучшего варианта до <br> оформления права собственности</p>
+                        <p class="text">Вы получаете полный комплекс услуг по осуществлению ваших желаний: <br> от подбора лучшего варианта до оформления права собственности на <br> ваш домик у моря, от выбора тура - до оказания любой помощи <br> в организации путешествия.</p>
+                    </div>
+                    <div class="item">
+                        <span class="number">03</span>
+                        <p class="title">Приезжайте провести отпуск <br> в свой особняк на берегу моря</p>
+                        <p class="text">Доверьте заботы по покупке дома вашей мечты ГИД-Агентству RealtyDreams и через 21 <br> день наслаждайтесь райским бунгало под шум морской волны или приезжайте провести <br> отпуск в свой особняк на берегу моря, путешествуя по местным достопримечательностям!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
 <section id="sec_05">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>Сделайте мечту ежедневной</h2>
+                <h2><span class="yellow">Сделайте</span> мечту ежедневной</h2>
                 <img src="img/h2_underline.png" alt="Underline" class="undr">
                 <p class="text"><span class="yellow">Получите в подарок тур в теплые страны </span>после оформления покупки <br> <span>Оставьте заявку</span> на подбор курортной недвижимости прямо сейчас</p>
                 <form  method="POST" class="form-inline" action="javascript:void(null);">
                     <!-- Hidden Required Fields -->
                     <input type="hidden" name="project_name" value="RealtyDreams">
                     <input type="hidden" name="admin_email" value="alien_202@mail.ru">
-                    <input type="hidden" name="form_subject" value="Заказ обратного звонка">
+                    <input type="hidden" name="form_subject" value="Заявка на подбор недвижимости">
                     <input type="hidden" name="goal" value="zayavka">
                     <!-- END Hidden Required Fields -->
 
@@ -211,41 +256,43 @@
             <div class="col-12">
                 <h2>Как ГИД-Агентство RealtyDreams <br> <span class="yellow">исполняет желания</span></h2>
                 <img src="img/h2_underline.png" alt="Underline" class="undr">
-                <div class="item">
-                    <img src="img/sec_06-icon.png" alt="Icon">
-                    <p class="text">Вы выбираете подходящие для вас варианты в самой большой базе недвижимости, даже не выходя <br> из собственного дома. Мы сотрудничаем только с надежными и проверенными партнерами.</p>
-                </div>
-                <div class="item">
-                    <img src="img/sec_06-icon.png" alt="Icon">
-                    <p class="text">На этапе подбора вы получаете только те объекты, которые полностью соответствуют вашим ожиданиям. <br> Мы работаем индивидуально с каждым клиентом до вашего максимального удовлетворения результатом.</p>
-                </div>
-                <div class="item">
-                    <img src="img/sec_06-icon.png" alt="Icon">
-                    <p class="text">Вы сами выбираете удобный для вас способ оплаты. Мы поможем оформить ипотеку, рассрочку, оплатить по безналичному расчету, расскажем о скидках и акциях, которые предлагает застройщик.</p>
-                </div>
-                <div class="item">
-                    <img src="img/sec_06-icon.png" alt="Icon">
-                    <p class="text">Вы получите грамотную консультацию от профессионального менеджера <br> по подбору страны и объекта недвижимости. Вы будете четко понимать, какой дом и где именно хотите приобрести.</p>
-                </div>
-                <div class="item">
-                    <img src="img/sec_06-icon.png" alt="Icon">
-                    <p class="text">Вам не придется самостоятельно вникать в тонкости оформления права собственности на недвижимость. <br> Мы поможем вам стать полноправным хозяином вашего домика у моря в максимально сжатые сроки.</p>
-                </div>
-                <div class="item">
-                    <img src="img/sec_06-icon.png" alt="Icon">
-                    <p class="text">При заказе путешествия вам нужно будет только вовремя прибыть в аэропорт.Все хлопоты по организации тура мы берем на себя. Вам остается отдыхать и наслаждаться новыми континентами и странами.</p>
-                </div>
-                <div class="big">
-                    <p>Станьте собственником курортной</p>
-                    <p>недвижимости и почувствуйте, как</p>
-                    <p><span class="yellow">ваши мечты</span> становятся реальностью</p>
-                </div>
+               <div class="wrap">
+                    <div class="item">
+                       <img src="img/sec_06-icon-1.png" alt="Icon">
+                       <p class="text">Вы выбираете подходящие для вас варианты в самой большой базе недвижимости, даже не выходя <br> из собственного дома. Мы сотрудничаем только с надежными и проверенными партнерами.</p>
+                   </div>
+                   <div class="item">
+                       <img src="img/sec_06-icon-2.png" alt="Icon">
+                       <p class="text">На этапе подбора вы получаете только те объекты, которые полностью соответствуют вашим ожиданиям. <br> Мы работаем индивидуально с каждым клиентом до вашего максимального удовлетворения результатом.</p>
+                   </div>
+                   <div class="item">
+                       <img src="img/sec_06-icon-3.png" alt="Icon">
+                       <p class="text">Вы сами выбираете удобный для вас способ оплаты. Мы поможем оформить ипотеку, рассрочку, оплатить по безналичному расчету, расскажем о скидках и акциях, которые предлагает застройщик.</p>
+                   </div>
+                   <div class="items-row">
+                       <div class="item">
+                           <img src="img/sec_06-icon-4.png" alt="Icon">
+                           <p class="text">Вы получите грамотную консультацию от профессионального менеджера <br> по подбору страны и объекта недвижимости. Вы будете четко понимать, какой дом и где именно хотите приобрести.</p>
+                       </div>
+                       <div class="item">
+                           <img src="img/sec_06-icon-5.png" alt="Icon">
+                           <p class="text">Вам не придется самостоятельно вникать в тонкости оформления права собственности на недвижимость. <br> Мы поможем вам стать полноправным хозяином вашего домика у моря в максимально сжатые сроки.</p>
+                       </div>
+                       <div class="item">
+                           <img src="img/sec_06-icon-6.png" alt="Icon">
+                           <p class="text">При заказе путешествия вам нужно будет только вовремя прибыть в аэропорт.Все хлопоты по организации тура мы берем на себя. Вам остается отдыхать и наслаждаться новыми континентами и странами.</p>
+                       </div>
+                   </div>
+                   <div class="big">
+                       <p>Станьте собственником курортной</p><br />
+                       <p>недвижимости и почувствуйте, как</p><br />
+                       <p><span class="yellow">ваши мечты</span> становятся реальностью</p>
+                   </div>
+               </div>
             </div>
         </div>
     </div>
 </section>
-
-
 <section id="sec_07">
     <div class="container">
         <div class="row">
@@ -257,49 +304,65 @@
     </div>
     <div class="wrapper">
         <div class="item">
-            <p class="title"></p>
-            <p class="price"> $</p>
-            <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            <div class="invisible">
+                <p class="title">КИПР</p>
+                <p class="price">45 000 000₽</p>
+                <a class="md-trigger btn flex btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            </div>
         </div>
         <div class="item">
-            <p class="title"></p>
-            <p class="price"> $</p>
-            <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            <div class="invisible">
+                <p class="title">КИПР</p>
+                <p class="price">29 000 000₽</p>
+                <a class="md-trigger btn flex btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            </div>
         </div>
         <div class="item">
-            <p class="title"></p>
-            <p class="price"> $</p>
-            <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            <div class="invisible">
+                <p class="title">КРЫМ</p>
+                <p class="price">1 200 000$</p>
+                <a class="md-trigger btn flex btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            </div>
         </div>
         <div class="item">
-            <p class="title"></p>
-            <p class="price"> $</p>
-            <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            <div class="invisible">
+                <p class="title">КРЫМ</p>
+                <p class="price">2 100 000$</p>
+                <a class="md-trigger btn flex btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            </div>
         </div>
     </div>
     <div class="wrapper">
         <div class="item">
-            <p class="title"></p>
-            <p class="price"> $</p>
-            <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            <div class="invisible">
+                <p class="title">ТАЙЛАНД</p>
+                <p class="price">300 000$</p>
+                <a class="md-trigger btn flex btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            </div>
         </div>
         <div class="item">
-            <p class="title"></p>
-            <p class="price"> $</p>
-            <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            <div class="invisible">
+                <p class="title">ТАЙЛАНД</p>
+                <p class="price">213 000$</p>
+                <a class="md-trigger btn flex btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            </div>
         </div>
         <div class="item">
-            <p class="title"></p>
-            <p class="price"> $</p>
-            <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            <div class="invisible">
+                <p class="title">ЧЕРНОГОРИЯ</p>
+                <p class="price">220 000€</p>
+                <a class="md-trigger btn flex btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            </div>
         </div>
         <div class="item">
-            <p class="title"></p>
-            <p class="price"> $</p>
-            <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            <div class="invisible">
+                <p class="title">ЧЕРНОГОРИЯ</p>
+                <p class="price">135 000 $</p>
+                <a class="md-trigger btn flex btn_trnsp" data-modal="modal_callback">Подробнее</a>
+            </div>
         </div>
-        <a class="md-trigger btn flex" data-modal="modal_callback">text</a>
     </div>
+    <a class="md-trigger btn flex" data-modal="modal_callback_order">Еще варианты</a>
 </section>
 
 <section id="sec_08">
@@ -308,12 +371,12 @@
             <div class="col-12">
                 <h2>Что нужно сделать сейчас, чтобы в ближайшее время <br> получить <span class="yellow">ключи от собственного дома у моря?</span></h2>
                 <img src="img/h2_underline.png" alt="Underline" class="undr">
-                <p class="text"><span class="yellow">Оставьте заявку на <span class="yellow">бесплатную консультацию</span> <br> и подбор объекта на этом сайте</p>
+                <p class="text">Оставьте заявку на <span class="yellow">бесплатную консультацию</span> <br> и подбор объекта на этом сайте</p>
                 <form  method="POST" class="form-inline" action="javascript:void(null);">
                     <!-- Hidden Required Fields -->
                     <input type="hidden" name="project_name" value="RealtyDreams">
                     <input type="hidden" name="admin_email" value="alien_202@mail.ru">
-                    <input type="hidden" name="form_subject" value="Заказ обратного звонка">
+                    <input type="hidden" name="form_subject" value="Заявка на консультацию">
                     <input type="hidden" name="goal" value="zayavka">
                     <!-- END Hidden Required Fields -->
 
@@ -358,19 +421,27 @@
         <div class="row">
             <div class="col-12">
                 <div class="item">
-                    <img src="img/sec_09-icon-1.png" alt="Icon">
+                    <div class="wrap">
+                        <img src="img/sec_09-icon-1.png" alt="Icon">
+                    </div>
                     <p class="text">Дождитесь звонка менеджера, который ответит на все ваши вопросы и поможет выбрать объект, о котором вы всегда мечтали.</p>
                 </div>
                 <div class="item">
-                    <img src="img/sec_09-icon-2.png" alt="Icon">
+                    <div class="wrap">
+                        <img src="img/sec_09-icon-2.png" alt="Icon">
+                    </div>
                     <p class="text">Посмотрите выбранный объект на месте! При необходимости мы поможем осуществить трансфер - подготовим <br> для вас билеты и отель.</p>
                 </div>
                 <div class="item">
-                    <img src="img/sec_09-icon-3.png" alt="Icon">
+                    <div class="wrap">
+                        <img src="img/sec_09-icon-3.png" alt="Icon">
+                    </div>
                     <p class="text">Оформите покупку при наличии всех документов всего за 21 день</p>
                 </div>
                 <div class="item big">
-                    <img src="img/sec_09-icon-4.png" alt="Icon">
+                    <div class="wrap">
+                        <img src="img/sec_09-icon-4.png" alt="Icon">
+                    </div>
                     <p class="text">Получите Привилегированную карту клуба от <span class="yellow">ГИД-Агентства RealtyDreams</span> и наслаждайтесь сбывшейся мечтой, любуясь морскими пейзажами с чашкой кофе на веранде собственного дома</p>
                 </div>
             </div>
@@ -379,12 +450,13 @@
 </section>
 
 <section id="sec_10">
+<div class="paralax_2"></div>
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <h2>Еще не определились с покупкой?</h2>
                 <img src="img/h2_underline.png" alt="Underline" class="undr">
-                <p class="title">Тогда становитесь участником <br> нашего <span class="yellow">клуба путешественнико</span>в </p>
+                <p class="title">Тогда становитесь участником <br> нашего <span class="yellow">клуба путешественников</span> </p>
                 <p class="text">и получите накопительную бонусную карту, которая даст вам возможность <br> в будущем совершить покупку по самой выгодной цене!</p>
             </div>
         </div>
@@ -405,61 +477,61 @@
                 <div class="item">
                     <img src="img/sec_11-pattern.png" alt="Image">
                     <div>
-                        <p class="title">text</p>
-                        <p class="price"> $</p>
+                        <p class="title">Эксклюзивные туры</p>
+                        <p class="small">Предложение тура</p>
+
                     </div>
-                    <p class="small">Предложение тура</p>
-                    <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+                    <a class="md-trigger btn btn_trnsp flex" data-modal="modal_callback">Подробнее</a>
                 </div>
                 <div class="item">
                     <img src="img/sec_11-pattern.png" alt="Image">
                     <div>
-                        <p class="title">text</p>
-                        <p class="price"> $</p>
+                        <p class="title">Туры выходного дня</p>
+                        <p class="small">Предложение тура</p>
+
                     </div>
-                    <p class="small">Предложение тура</p>
-                    <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+                    <a class="md-trigger btn btn_trnsp flex" data-modal="modal_callback">Подробнее</a>
                 </div>
                 <div class="item">
                     <img src="img/sec_11-pattern.png" alt="Image">
                     <div>
-                        <p class="title">text</p>
-                        <p class="price"> $</p>
+                        <p class="title">Круизы и яхтинг</p>
+                        <p class="small">Предложение тура</p>
+
                     </div>
-                    <p class="small">Предложение тура</p>
-                    <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+                    <a class="md-trigger btn btn_trnsp flex" data-modal="modal_callback">Подробнее</a>
+                </div><br />
+                <div class="item">
+                    <img src="img/sec_11-pattern.png" alt="Image">
+                    <div>
+                        <p class="title">Туры Fly&Drive</p>
+                        <p class="small">Предложение тура</p>
+
+                    </div>
+                    <a class="md-trigger btn btn_trnsp flex" data-modal="modal_callback">Подробнее</a>
                 </div>
                 <div class="item">
                     <img src="img/sec_11-pattern.png" alt="Image">
                     <div>
-                        <p class="title">text</p>
-                        <p class="price"> $</p>
+                        <p class="title">Событийные туры</p>
+                        <p class="small">Предложение тура</p>
+
                     </div>
-                    <p class="small">Предложение тура</p>
-                    <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+                    <a class="md-trigger btn btn_trnsp flex" data-modal="modal_callback">Подробнее</a>
                 </div>
                 <div class="item">
                     <img src="img/sec_11-pattern.png" alt="Image">
                     <div>
-                        <p class="title">text</p>
-                        <p class="price"> $</p>
+                        <p class="title">Путешествие со смыслом…</p>
+                        <p class="small">Предложение тура</p>
+
                     </div>
-                    <p class="small">Предложение тура</p>
-                    <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
-                </div>
-                <div class="item">
-                    <img src="img/sec_11-pattern.png" alt="Image">
-                    <div>
-                        <p class="title">text</p>
-                        <p class="price"> $</p>
-                    </div>
-                    <p class="small">Предложение тура</p>
-                    <a class="md-trigger btn btn_trnsp" data-modal="modal_callback">Подробнее</a>
+                    <a class="md-trigger btn btn_trnsp flex" data-modal="modal_callback">Подробнее</a>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 tc">
                 <p class="cta">Присоединяйтесь к <span class="yellow">Клубу путешественников</span> <br> и наслаждайтесь отдыхом без забот и границ</p>
                 <a class="md-trigger btn flex" data-modal="modal_callback">Еще варианты</a>
             </div>
@@ -471,42 +543,106 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>Их мечты уже стали реальностью...</h2>
+                <h2>Их мечты уже <span class="yellow">стали реальностью...</span></h2>
                 <img src="img/h2_underline.png" alt="Underline" class="undr">
                 <div class="slider">
                     <div class="slide">
-                        <div class="block_img"></div>
-                        <div class="block_text">
-                            <div class="name"></div>
-                            <p class="title"></p>
-                            <p class="text"></p>
+                        <div class="block_img">
+                            <div class="youtube" id="4ZV4_Vml9Cc"></div>
                         </div>
+                        <div class="block_text">
+                            <div class="name">Иван Семенов</div>
+                            <p class="title">Владелец собственного бизнеса</p>
+                            <p class="text">“Всегда мечтал жить у моря. <br /> Мой бизнес позволяет мне работать удаленно с любой точки <br /> мира, поэтому я решил исполнить детскую мечту. Сейчас у меня <br /> есть собственный домик на побережье, который я приобрел <br /> с помощью агентства RealtyDreams. Мечты сбываются.”</p>
+                        </div>
+                        <div class="clear"></div>
                     </div>
                     <div class="slide">
-                        <div class="block_img"></div>
-                        <div class="block_text">
-                            <div class="name"></div>
-                            <p class="title"></p>
-                            <p class="text"></p>
+                        <div class="block_img">
+                            <div class="youtube" id="4ZV4_Vml9Cc"></div>
                         </div>
+                        <div class="block_text">
+                            <div class="name">Иван Семенов</div>
+                            <p class="title">Владелец собственного бизнеса</p>
+                            <p class="text">“Всегда мечтал жить у моря. <br /> Мой бизнес позволяет мне работать удаленно с любой точки <br /> мира, поэтому я решил исполнить детскую мечту. Сейчас у меня <br /> есть собственный домик на побережье, который я приобрел <br /> с помощью агентства RealtyDreams. Мечты сбываются.”</p>
+                        </div>
+                        <div class="clear"></div>
                     </div>
                     <div class="slide">
-                        <div class="block_img"></div>
-                        <div class="block_text">
-                            <div class="name"></div>
-                            <p class="title"></p>
-                            <p class="text"></p>
+                        <div class="block_img">
+                            <div class="youtube" id="4ZV4_Vml9Cc"></div>
                         </div>
+                        <div class="block_text">
+                            <div class="name">Иван Семенов</div>
+                            <p class="title">Владелец собственного бизнеса</p>
+                            <p class="text">“Всегда мечтал жить у моря. <br /> Мой бизнес позволяет мне работать удаленно с любой точки <br /> мира, поэтому я решил исполнить детскую мечту. Сейчас у меня <br /> есть собственный домик на побережье, который я приобрел <br /> с помощью агентства RealtyDreams. Мечты сбываются.”</p>
+                        </div>
+                        <div class="clear"></div>
                     </div>
                     <div class="slide">
-                        <div class="block_img"></div>
-                        <div class="block_text">
-                            <div class="name"></div>
-                            <p class="title"></p>
-                            <p class="text"></p>
+                        <div class="block_img">
+                            <div class="youtube" id="4ZV4_Vml9Cc"></div>
                         </div>
+                        <div class="block_text">
+                            <div class="name">Иван Семенов</div>
+                            <p class="title">Владелец собственного бизнеса</p>
+                            <p class="text">“Всегда мечтал жить у моря. <br /> Мой бизнес позволяет мне работать удаленно с любой точки <br /> мира, поэтому я решил исполнить детскую мечту. Сейчас у меня <br /> есть собственный домик на побережье, который я приобрел <br /> с помощью агентства RealtyDreams. Мечты сбываются.”</p>
+                        </div>
+                        <div class="clear"></div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sec_13">
+<div class="paralax_2"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2><span class="yellow">Почувствуйте,</span> что значит быть <br /> полноправным хозяином своей жизни</h2>
+                <img src="img/h2_underline.png" alt="Underline" class="undr">
+                <p class="text"><span class="yellow">Получите в подарок тур в теплые страны</span> после оформления покупки <br /> Оставьте заявку на подбор курортной недвижимости прямо сейчас</p>
+                <form  method="POST" class="form-inline" action="javascript:void(null);">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="RealtyDreams">
+                    <input type="hidden" name="admin_email" value="alien_202@mail.ru">
+                    <input type="hidden" name="form_subject" value="Заявка на подбор недвижимости">
+                    <input type="hidden" name="goal" value="zayavka">
+                    <!-- END Hidden Required Fields -->
+
+                    <span class="field">
+                        <input type="text" class="form-control" name="name" required=""  placeholder="Имя " />
+                    </span>
+
+
+                    <span class="field">
+                        <input placeholder="Телефон" type="tel" class="form-control" name="custom_tel" required="">
+                    <!-- Если отправляем и на Гет РЕспонс тоже - меняем название поля name на то которое создали в компании ГетРЕспонса -->
+                    </span>
+
+                    <span class="field">
+                        <input placeholder="E-mail" type="email" class="form-control" name="email" required="">
+                    <!-- Если отправляем и на Гет РЕспонс тоже - меняем название поля name на то которое создали в компании ГетРЕспонса -->
+                    </span>
+
+
+                    <button type="submit" class="btn" name="send">Подобрать варианты</button>
+
+                    <!-- Просто любое дополнительное поле -->
+                    <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
+                    <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                    <input type="hidden" class="pacet" name="form_pacet" value="">
+                    <!-- GET RESPONCE INPUTS -->
+                    <input type="hidden" name="start_day" value="0"/>
+                    <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                    <input type="hidden" name="campaign_token" value=""/>
+                    <!-- GET RESPONCE INPUTS -->
+                    <div class="clear"></div>
+
+
+                </form>
             </div>
         </div>
     </div>
@@ -516,7 +652,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="title">Живите сегодня!</p>
+                <p class="title yellow">Живите сегодня!</p>
                 <p class="text">Не складывайте ваши желания в пыльный ящик ожиданий!</p>
             </div>
         </div>
@@ -527,18 +663,72 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="logo"><img src="" alt=""><span></span></div>
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                    <span>Продажа курортной недвижимости <br /> и организация путешествий</span>
+                    <div class="clear"></div>
+                </div>
                 <ul class="social">
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <a target="_blank" href="https://vk.com/realtydreams"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/RealtyDreamssgt/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/realty_dreams_guide/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
                 </ul>
-                <div class="contacts"><a href=""></a><a href=""></a></div>
-                <a class="md-trigger" data-modal="modal_callback">text</a>
+                <div class="contacts">
+                    <a class="tel" href="tel:+79227771510">+7 (922) 777-15-10</a>
+                    <a class="email" href="email:realtydream@mail.com">realtydream@mail.com</a>
+                </div>
+                <a class="md-trigger btn flex" data-modal="modal_callback">Подобрать варианты</a>
+                <div class="clear"></div>
             </div>
         </div>
     </div>
 </section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="col-12 tl">
+            <div class="politics tl">
+                <a class="md-trigger" data-modal="modal_politics_one">Политика  конфиденциальности</a>
+                <a class="md-trigger" data-modal="modal_politics_two">Отказ от  ответственности</a>
+                <a class="md-trigger" data-modal="modal_politics_three">Согласие с  рассылкой</a>
+            </div>
+            <a href="http://geniusstudio.me/" target="_blank" class="logo-gs">
+                <svg width=95 version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 136.8 44">
+                <path class="st0" d="M6.9,10.6c0-3.1,1.4-4.3,3.6-4.3s3.6,1.2,3.6,4.3v4.7h6.5V11c0-7-3.5-11-10.2-11S0,4,0,11v18.1
+                    c2.3,0,4.6,0,6.9,0V10.6z"/>
+                <path class="st0" d="M20.5,19.9h-9.6v6.2H14V29c2.1,0,4.3,0,6.5,0V19.9z"/>
+                <path class="st0" d="M44.9,6.8V0.5H26.2V29c2.3,0,4.6,0,6.9,0v-3.9h9.4v-6.2h-9.4V6.8H44.9z"/>
+                <path class="st0" d="M72.1,0.5H66v26.2L58.9,0.5h-8.6V29c2.1,0,4.1,0,6.2,0V12.6L61,29.1c3.7,0,7.4,0,11.2,0L72.1,0.5L72.1,0.5z"/>
+                <path class="st0" d="M85.2,0.5h-6.9V29c2.3,0,4.6,0,6.9,0V0.5z"/>
+                <path class="st0" d="M111.6,0.5h-6.5V29c2.2,0,4.4,0,6.5,0V0.5z"/>
+                <path class="st0" d="M98,0.5h-6.9V29c2.3,0,4.6,0,6.9,0V0.5z"/>
+                <path class="st0" d="M123.5,10.6c0-3.1,1.2-4.3,3.4-4.3s3.4,1.2,3.4,4.3v1.8h6.5V11c0-7-3.4-11-10.1-11c-6.7,0-10.1,4-10.1,11
+                    c0,9.7,8.1,12.9,11.7,18.1c2.5,0,5.3,0,7.8,0C133.4,20.6,123.5,18.3,123.5,10.6z"/>
+                <g>
+                    <path class="st0" d="M36.2,43l0.6-0.7c0.6,0.5,1.1,0.8,1.9,0.8c0.6,0,1.1-0.3,1.1-0.8c0-0.4-0.2-0.7-1.3-0.9c-1.3-0.3-2-0.7-2-1.8
+                        c0-1,0.8-1.7,2-1.7c0.9,0,1.6,0.3,2.2,0.7l-0.6,0.8c-0.5-0.4-1.1-0.6-1.6-0.6c-0.6,0-1,0.3-1,0.7c0,0.5,0.3,0.7,1.4,0.9
+                        c1.3,0.3,1.9,0.8,1.9,1.8c0,1.1-0.9,1.8-2.1,1.8C37.8,44,36.9,43.7,36.2,43z"/>
+                    <path class="st0" d="M49.6,38.9h-1.9v-1h4.8v1h-1.9v5h-1.1L49.6,38.9L49.6,38.9z"/>
+                    <path class="st0" d="M59.8,41.4V38h1v3.4c0,1.1,0.6,1.7,1.5,1.7s1.5-0.6,1.5-1.7V38h1v3.4c0,1.8-1,2.7-2.5,2.7
+                        C60.8,44,59.8,43.1,59.8,41.4z"/>
+                    <path class="st0" d="M72.6,38h2.2c1.9,0,3.2,1.3,3.2,3s-1.3,3-3.2,3h-2.2V38z M74.8,42.9c1.2,0,2.1-0.8,2.1-2s-0.8-2-2.1-2h-1.2v4
+                        H74.8z"/>
+                    <path class="st0" d="M85.5,38h1v5.9h-1V38z"/>
+                    <path class="st0" d="M94.2,40.9c0-1.7,1.3-3.1,3.1-3.1s3.1,1.4,3.1,3.1c0,1.7-1.3,3.1-3.1,3.1C95.4,44,94.2,42.6,94.2,40.9z
+                         M99.3,40.9c0-1.2-0.8-2.1-2-2.1s-2,0.9-2,2.1c0,1.2,0.8,2.1,2,2.1C98.4,43,99.3,42.1,99.3,40.9z"/>
+                </g>
+            </svg>
+            </a>
+            <div class="clear"></div>
+        </div>
+    </div>
+</footer>
 
 <div class="hidden">
     <div class="md-modal md-effect-1" id="modal_callback">
@@ -547,7 +737,9 @@
                 <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
             </span>
             <div class="titlebox">
-                <h2 class="colored">Заказ обратного звонка</h2>
+                <h2 class="colored">Заказ звонка</h2>
+                <img src="img/h2_underline.png" alt="Underline" class="undr">
+                <p>Введите Ваши данные <br /> и Наш специалист свяжется <br /> с Вами для уточнения всех деталей</p>
             </div>
             <div>
                 <form  method="POST" class="form-inline" action="javascript:void(null);">
@@ -569,7 +761,113 @@
                     </span>
 
 
-                    <button type="submit" class="btn" name="send" data-text="Перезвоните мне">Перезвоните мне</button>
+                    <button type="submit" class="btn" name="send">Перезвоните мне</button>
+
+                    <!-- Просто любое дополнительное поле -->
+                    <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
+                    <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                    <input type="hidden" class="pacet" name="form_pacet" value="">
+                    <!-- GET RESPONCE INPUTS -->
+                    <input type="hidden" name="start_day" value="0"/>
+                    <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                    <input type="hidden" name="campaign_token" value=""/>
+                    <!-- GET RESPONCE INPUTS -->
+                    <div class="clear"></div>
+
+
+                </form>
+
+                <div class="md_bottom">
+                    <p class="tc t_small"><i class="fa fa-lock"></i>  *Ваши данные никогда не будут переданы 3-м лицам</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="md-modal md-effect-1" id="modal_callback_order">
+        <div class="md-content">
+            <span class="btn_close_modal">
+                <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
+            </span>
+            <div class="titlebox">
+                <h2 class="colored">Введите Ваши данные</h2>
+                <img src="img/h2_underline.png" alt="Underline" class="undr">
+                <p> и мы подберем дом именно для Вас</p>
+            </div>
+            <div>
+                <form  method="POST" class="form-inline" action="javascript:void(null);">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="RealtyDreams">
+                    <input type="hidden" name="admin_email" value="alien_202@mail.ru">
+                    <input type="hidden" name="form_subject" value="Заказ обратного звонка">
+                    <input type="hidden" name="goal" value="zvonok">
+                    <!-- END Hidden Required Fields -->
+
+                    <span class="field">
+                    <input type="text" class="form-control" name="name" required=""  placeholder="Ваше имя " />
+                    </span>
+
+
+                    <span class="field">
+                    <input placeholder="Ваш телефон" type="tel" class="form-control" name="custom_tel" required="">
+                    <!-- Если отправляем и на Гет РЕспонс тоже - меняем название поля name на то которое создали в компании ГетРЕспонса -->
+                    </span>
+
+
+                    <button type="submit" class="btn" name="send">Хочу дом у моря</button>
+
+                    <!-- Просто любое дополнительное поле -->
+                    <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
+                    <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                    <input type="hidden" class="pacet" name="form_pacet" value="">
+                    <!-- GET RESPONCE INPUTS -->
+                    <input type="hidden" name="start_day" value="0"/>
+                    <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                    <input type="hidden" name="campaign_token" value=""/>
+                    <!-- GET RESPONCE INPUTS -->
+                    <div class="clear"></div>
+
+
+                </form>
+
+                <div class="md_bottom">
+                    <p class="tc t_small"><i class="fa fa-lock"></i>  *Ваши данные никогда не будут переданы 3-м лицам</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="md-modal md-effect-1" id="modal_callback_top">
+        <div class="md-content">
+            <span class="btn_close_modal">
+                <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
+            </span>
+            <div class="titlebox">
+                <h2 class="colored"><span class="yellow">ТОП-10</span> самых <br />выгодных предложений </h2>
+                <img src="img/h2_underline.png" alt="Underline" class="undr">
+                <p>Введите Ваши данные и мы <br /> отправим Вам каталог на почту</p>
+            </div>
+            <div>
+                <form  method="POST" class="form-inline" action="javascript:void(null);">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="RealtyDreams">
+                    <input type="hidden" name="admin_email" value="alien_202@mail.ru">
+                    <input type="hidden" name="form_subject" value="Заказ каталога">
+                    <input type="hidden" name="goal" value="zvonok">
+                    <!-- END Hidden Required Fields -->
+
+                    <span class="field">
+                    <input type="text" class="form-control" name="name" required=""  placeholder="Ваше имя " />
+                    </span>
+
+
+                    <span class="field">
+                    <input placeholder="Ваш телефон" type="tel" class="form-control" name="custom_tel" required="">
+                    <!-- Если отправляем и на Гет РЕспонс тоже - меняем название поля name на то которое создали в компании ГетРЕспонса -->
+                    </span>
+
+
+                    <button type="submit" class="btn" name="send" >Хочу дом у моря</button>
 
                     <!-- Просто любое дополнительное поле -->
                     <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->

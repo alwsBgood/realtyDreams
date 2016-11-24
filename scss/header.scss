@@ -5,9 +5,9 @@ body{
 	position: relative;
 	overflow-x: hidden;
 	min-width: 320px;
-	font: 18px/27px  Roboto;
-  letter-spacing: .08em;
-  color: black;
+	font: 18px  $main_font;
+  letter-spacing: .01em;
+  color: $gray;
 	background-color: #fff;
 }
 
@@ -39,3 +39,187 @@ button{
 	width: 0;
 	height: 0;
 }
+
+.yellow{color: $main_color}
+
+h2{
+	position: relative;
+	font: 40px $Bebas;
+	text-transform: uppercase;
+	color: $second_color;
+	margin-bottom: 15px;
+}
+
+
+
+.btn{
+	position: relative;
+	max-width: 266px;
+	width: 100%;
+	height: 62px;
+
+	background-color: $main_color;
+	border-radius: 31px;
+	box-shadow: 4px 6.9px 22px rgba(96, 86, 73, 0.69);
+
+	color: #181818;
+	font-family: $Futura_300;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	font-size: 14px;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.btn.btn_trnsp{
+	background: transparent;
+
+	border: 3px solid #edc900;
+	border-radius: 31px;
+	box-shadow: 4px 6.9px 22px rgba(96, 86, 73, 0.15);
+}
+
+.btn:hover{
+	background-color: #f8dd49;
+	box-shadow: 2px 3.5px 8px rgba(96, 86, 73, 0.69);
+}
+
+.btn.btn_trnsp:hover{
+	background-color: #edc900;
+	color: $second_color;
+	box-shadow: 4px 6.9px 22px rgba(96, 86, 73, 0.15);
+}
+
+
+
+#sec_01{
+	padding: 28px 0 160px;
+	background: url(../img/sec_01-bg.png) top center no-repeat;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	.top{
+		.logo{
+			float: left
+		}
+		.phones{
+			float: right;
+			margin: 0;
+			background: transparent;
+			border: 2px solid #fff;
+			box-shadow: none;
+			color: #fff;
+		}
+		.phones:hover{
+			color: $second_color;
+			background: #fff;
+		}
+	}
+	h1{
+		position: relative;
+		margin-top: 135px;
+		color: transparent;
+		font: 114px/120px $Bebas;
+		text-transform: uppercase;
+	}
+	h1:before{
+		position: absolute;
+		content: '';
+		width: 231px;
+		height: 143px;
+		right: 50%;
+		top: 0px;
+		background: url(../img/cloud.png) center no-repeat;
+		animation: cloud 40s linear infinite;
+	}
+	h1:after{
+		position: absolute;
+		content: '';
+		width: 131px;
+		height: 83px;
+		right: 40%;
+		top: 100px;
+		background: url(../img/cloud.png) center no-repeat;
+		background-size: contain;
+		animation: cloud2 55s linear infinite;
+	}
+	.afterheader{
+		font-family: $Futura_300;
+		font-size: 21px;
+		letter-spacing: 0.05em;
+		margin: 10px 0 20px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.text{
+		font: 21px $Futura_299;
+		letter-spacing: 0.05em;
+		span{
+			font-family: $main_font;
+		}
+	}
+	.btn{
+		margin: 25px auto 0;
+	}
+}
+
+@keyframes cloud {
+	0%{transform: translateX(1000px);}
+	99%{opacity: 1}
+	100%{
+		opacity: 0;
+		transform: translateX(-1000px);
+	}
+}
+
+@keyframes cloud2 {
+	0%{transform: translate(1000px, 0);}
+	99%{opacity: 1}
+	100%{
+		opacity: 0;
+		transform: translate(-1000px, -20px);
+	}
+}
+
+#sec_02{
+	padding: 110px 0 50px;
+	h2{
+		position: relative;
+		margin-bottom: 15px;
+	}
+	.undr{margin-bottom: 70px;}
+	h2:before{
+		position: absolute;
+		content: '';
+		width: 140px;
+		height: 220px;
+		opacity: 0.79;
+		background-color: #e8e9e9;
+		left: -90px;
+		top: -50px;
+		z-index: -1;
+	}
+	.col-6{padding-left: 65px;}
+	.item{
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		min-height: 85px;
+		padding: 10px 0 10px 125px;
+	}
+	.item+.item{margin-top: 65px;}
+	.item:nth-child(1){background: url(../img/sec_02-icon-1.png) left center no-repeat}
+	.item:nth-child(2){background: url(../img/sec_02-icon-3.png) left center no-repeat}
+	.item:nth-child(3){background: url(../img/sec_02-icon-5.png) left center no-repeat}
+	.item:nth-child(4){background: url(../img/sec_02-icon-7.png) left center no-repeat}
+	.col-6+.col-6{
+		.item{margin-left: -10px;}
+		.item:nth-child(1){
+			background: url(../img/sec_02-icon-2.png) left center no-repeat;
+			margin-top: -10px;
+		}
+		.item:nth-child(2){background: url(../img/sec_02-icon-4.png) left center no-repeat}
+		.item:nth-child(3){background: url(../img/sec_02-icon-6.png) left center no-repeat}
+	}
+}
+
