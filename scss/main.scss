@@ -667,6 +667,78 @@
   .btn{float: right;}
 }
 
+[id*='modal_goods'] {
+  min-width: 280px !important;
+  max-width: 1000px !important;
+  width: 95%;
+  min-height: 100px;
+  max-height: 640px;
+  height: 90%;
+}
+  [id*='modal_good'] .md-content {
+    text-align: left !important;
+    padding: 20px;
+    min-height: 280px;
+    // max-height: auto;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    form.mobile{
+      display: none;
+      }}
+  [id*='modal_good'] .slider-big img {
+    width: 420px; }
+  [id*='modal_good'] .slider-small {
+    margin-top: 30px; }
+    [id*='modal_good'] .slider-small .slick-slide {
+      border: 1px solid #fff;
+      cursor: pointer; }
+    [id*='modal_good'] .slider-small .slick-center {
+      border: 1px solid #fa6b26; }
+  [id*='modal_good'] .slider_block {
+    float: left;
+    width: 480px;
+    margin-right: 20px;
+  }
+  [id*='modal_good'] .text_block {
+    float: right;
+    width: 420px; }
+    [id*='modal_good'] .text_block .title {
+      text-transform: uppercase;
+      letter-spacing: 0.04em; }
+    [id*='modal_good'] .text_block .text {
+      font: 16px/22px "HelveticaNeueCyr-Light", sans-serif; }
+    [id*='modal_good'] .text_block .price{
+      color: $main_color;
+      font: 29px $Futura_300;
+      margin: 20px 0 10px;
+      text-transform: uppercase;
+    }
+      [id*='modal_good'] .text_block .price span {
+        display: inline-block;
+        margin-left: 20px;
+        color: #b6b6b6;
+        text-decoration: line-through; }
+    [id*='modal_good'] form {
+      max-width: 343px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    [id*='modal_good'] .field {
+      margin-top: 5px;
+      width: 100%; }
+      [id*='modal_good'] .field input {
+        width: 100%; }
+    [id*='modal_good'] .btn {
+      margin: 10px auto; }
+
+
+[id*="modal_politics"]{
+  .md-content{
+    padding: 20px 0 0 20px;
+  }
+}
+
 footer{
   padding: 20px 0 15px;
   background: #202020;
