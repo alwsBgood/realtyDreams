@@ -233,12 +233,13 @@
   .big{
     text-align: center;
     margin-top: 215px;
-    font: 56px $Bebas;
+    font: 56px/58px $Bebas;
     p{
       background: rgba(0,0,0,0.8);
       margin-top: 5px;
+      padding-top: 5px;
       display: inline-block;
-      padding: 0px 10px;
+      padding: 5px 10px 0;
       color: #fff;
     }
   }
@@ -434,7 +435,7 @@
     position: absolute;
     top: -1500px ;bottom: -1000px;
     left: 0;right: 0;
-    background: url(../img/sec_10-paralax.png) top center;
+    background: url(../img/sec_10-paralax.png) top center no-repeat;
     z-index: 1;
   }
   .title{
@@ -539,6 +540,10 @@
   }
   .play:hover{
     box-shadow: 1px -1px 15px $main_color;
+  }
+  iframe{
+    margin: 0 auto;
+    display: block;
   }
   .slider{
     .block_img{

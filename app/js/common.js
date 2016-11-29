@@ -10,7 +10,7 @@ $(function() {
     var msg = btn.closest('form').find('input, textarea, select');
     var send_btn = btn.closest('form').find('[name=send]');
     var send_options = btn.closest('form').find('[name=campaign_token]');
-
+    var goal = btn.closest('form').find('[name=goal]').val();
 
 
     $(ref).each(function() {
@@ -56,6 +56,7 @@ $(function() {
               $('form').trigger("reset");
               setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
                     // Настройки модального окна после удачной отправки
+                        yaCounter41145944.reachGoal(goal);
                         $('div.md-show').removeClass('md-show');
                         $('form').trigger("reset");
                         $("#call_ok")[0].click();
@@ -80,6 +81,7 @@ $(function() {
                 $('form').trigger("reset");
                 setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
                 // Настройки модального окна после удачной отправки
+                yaCounter41145944.reachGoal(goal);
                 $('div.md-show').removeClass('md-show');
                 $('form').trigger("reset");
                 $("#call_ok")[0].click();

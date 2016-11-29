@@ -209,12 +209,13 @@
   #sec_06 .big {
     text-align: center;
     margin-top: 215px;
-    font: 56px "BebasNeueCyrillic", sans-serif; }
+    font: 56px/58px "BebasNeueCyrillic", sans-serif; }
     #sec_06 .big p {
       background: rgba(0, 0, 0, 0.8);
       margin-top: 5px;
+      padding-top: 5px;
       display: inline-block;
-      padding: 0px 10px;
+      padding: 5px 10px 0;
       color: #fff; }
 
 #sec_07 {
@@ -426,7 +427,7 @@
     bottom: -1000px;
     left: 0;
     right: 0;
-    background: url(../img/sec_10-paralax.png) top center;
+    background: url(../img/sec_10-paralax.png) top center no-repeat;
     z-index: 1; }
   #sec_10 .title {
     margin: 50px 0 15px;
@@ -523,6 +524,9 @@
   #sec_12 .play:hover {
     -webkit-box-shadow: 1px -1px 15px #faca00;
     box-shadow: 1px -1px 15px #faca00; }
+  #sec_12 iframe {
+    margin: 0 auto;
+    display: block; }
   #sec_12 .slider .block_img {
     float: left; }
   #sec_12 .slider .block_text {
@@ -1143,7 +1147,7 @@ input:focus::-webkit-input-placeholder {
   #sec_03 video {
     display: none; }
   #sec_03 .title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 42px; }
   #sec_03 h3 {
     font-size: 28px;
@@ -1177,7 +1181,8 @@ input:focus::-webkit-input-placeholder {
       border-radius: 5px; }
     #sec_06 .big {
       margin-top: 55px;
-      font-size: 26px; }
+      font-size: 18px;
+      line-height: 22px; }
   #sec_07 .wrapper {
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
@@ -1262,8 +1267,10 @@ input:focus::-webkit-input-placeholder {
       float: none;
       margin-top: 20px;
       display: inline-block; }
-  [id*='modal_goods'] .md-content {
-    padding: 15px; } }
+  [id*='modal_goods'] {
+    width: 50%; }
+    [id*='modal_goods'] .md-content {
+      padding: 15px; } }
 
 @media only screen and (max-width: 500px) {
   [id*='modal_goods'] .slider_block img {
